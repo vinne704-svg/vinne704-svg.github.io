@@ -175,7 +175,7 @@ body {
 }
 
 .search-bar {
-    margin-top: 20px;
+    margin: auto;
     margin-bottom: 50px;
     border: 2px solid lightgrey;
     display: flex;
@@ -365,3 +365,4 @@ footer {
     }
 
 }
+
