@@ -183,7 +183,7 @@ body {
     background-color:white;
     border-radius: 50px;
     padding: 5px 15px;
-    width: 50%;
+    width: 40%;
     transition: all 0.1s ease;
 }
 
@@ -307,7 +307,7 @@ footer {
     .sidebar {
         background: var(--bg-darker);
     }
-
+    
     .info h3 {
         margin-top: 20px;
         line-height: 50px;
@@ -316,11 +316,11 @@ footer {
         font-weight: 500;
         color: #ddd;
     }
-
+    
     .info h3:hover {
         color: #fff;
     }
-
+    
     .info p {
         line-height: 40px;
         letter-spacing: 1px;
@@ -328,34 +328,34 @@ footer {
         font-weight: 400;
         color: #bbb;
     }
-
+    
     .info p:hover {
         color: #ddd;
     }
-
+    
     .main-content {
         background-color: var(--bg-dark);
     }
-
+    
     .flex-container {
         background-color: var(--bg-darker);
     }
-
+    
     .card h2 {
         color: #ddd;
     }
-
+    
     .card h2:hover {
         color: #fff;
     }
-
+    
     .card p {
         line-height: normal;
         overflow: hidden;
         color: #bbb;
         font-weight: 400;
     }
-
+    
     footer {
         text-align: center;
         padding: 30px;
@@ -365,5 +365,6 @@ footer {
     }
 
 }
+
 
 
