@@ -4,9 +4,10 @@
     --bg-lighter: white;
     --bg-dark: #333;
     --bg-darker: #222;
-    --noto-serif: 'EB Garamond', 'Noto Serif SC', 'Noto Serif TC';
-    --microsoft-yahei: '微软雅黑', 'Consolas';
-    --google-sans: 'Google Sans Flex', 'Google Sans Code';
+    --sym-default: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "STHeiti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --noto-serif: 'Noto Serif SC', 'Noto Serif TC';
+    --noto-sans: 'Noto Sans SC', 'Noto Sans TC';
+    --google-sans: 'Google Sans Flex';
 }
 
 @font-face {
@@ -365,6 +366,7 @@ footer {
     }
 
 }
+
 
 
 
