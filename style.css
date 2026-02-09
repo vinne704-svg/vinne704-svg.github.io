@@ -7,7 +7,7 @@
     --sym-default: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "STHeiti", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --noto-serif: 'Noto Serif SC', 'Noto Serif TC', 'Noto Serif';
     --noto-sans: 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans';
-    --google-sans: 'Google Sans Flex';
+    --google-sans: 'Google Sans', 'Google Sans Flex', 'Noto Sans SC', 'Noto Sans TC';
 }
 
 @font-face {
@@ -248,7 +248,7 @@ body {
 .card h2 {
     line-height: normal;
     overflow: hidden;
-    font-weight: 600;
+    font-weight: 500;
     color: #333;
 }
 
@@ -289,13 +289,13 @@ footer {
 .article h1 {
     margin-top: calc(20px * var(--font-scale));
     font-size: calc(40px * var(--font-scale));
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .article h2 {
     margin-top: calc(15px * var(--font-scale));
     font-size: calc(30px * var(--font-scale));
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .article p {
@@ -310,11 +310,6 @@ footer {
     }
     
     .info h3 {
-        margin-top: 20px;
-        line-height: 50px;
-        letter-spacing: 1.5px;
-        font-size: 18px;
-        font-weight: 500;
         color: #ddd;
     }
     
@@ -323,10 +318,6 @@ footer {
     }
     
     .info p {
-        line-height: 40px;
-        letter-spacing: 1px;
-        font-size: 17px;
-        font-weight: 400;
         color: #bbb;
     }
     
@@ -351,21 +342,15 @@ footer {
     }
     
     .card p {
-        line-height: normal;
-        overflow: hidden;
         color: #bbb;
-        font-weight: 400;
     }
     
     footer {
-        text-align: center;
-        padding: 30px;
-        margin-top: 40px;
-        letter-spacing: 0.5px;
         color: #aaa;
     }
 
 }
+
 
 
 
