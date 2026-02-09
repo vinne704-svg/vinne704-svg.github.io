@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: '京華老宋体';
-    src: url(https://drive.usercontent.google.com/u/0/uc?id=1WQu8_LaS5JRn9Fd03cxWpT4LA9H9HC7T&export=download) format('truetype');
+    src: url('https://drive.usercontent.google.com/u/0/uc?id=1WQu8_LaS5JRn9Fd03cxWpT4LA9H9HC7T&export=download') format('truetype');
 }
 
 .material-symbols-outlined {
@@ -365,6 +365,7 @@ footer {
     }
 
 }
+
 
 
 
