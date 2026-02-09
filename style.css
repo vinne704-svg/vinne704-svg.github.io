@@ -9,6 +9,11 @@
     --google-sans: 'Google Sans Flex', 'Google Sans Code';
 }
 
+@font-face {
+    font-family: '京華老宋体';
+    src: url(https://drive.usercontent.google.com/u/0/uc?id=1WQu8_LaS5JRn9Fd03cxWpT4LA9H9HC7T&export=download) format('truetype');
+}
+
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
 }
@@ -360,4 +365,3 @@ footer {
     }
 
 }
-
