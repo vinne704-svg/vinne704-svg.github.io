@@ -170,7 +170,7 @@ body {
 }
 
 .search-bar {
-    margin: auto;
+    margin-top: 20px;
     margin-bottom: 50px;
     border: 2px solid lightgrey;
     display: flex;
@@ -178,7 +178,7 @@ body {
     background-color:white;
     border-radius: 50px;
     padding: 5px 15px;
-    width: 100%;
+    width: 50%;
     transition: all 0.1s ease;
 }
 
@@ -236,7 +236,7 @@ body {
     margin: auto;
     padding: 10px;
     grid-template-columns: 2fr 1fr;
-    font-family: calc(--noto-serif);
+    font-family: var(--noto-serif);
 }
 
 .card h2 {
@@ -360,3 +360,4 @@ footer {
     }
 
 }
+
