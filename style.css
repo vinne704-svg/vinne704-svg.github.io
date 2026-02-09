@@ -5,8 +5,8 @@
     --bg-dark: #333;
     --bg-darker: #222;
     --sym-default: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "STHeiti", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --noto-serif: 'Noto Serif SC', 'Noto Serif TC';
-    --noto-sans: 'Noto Sans SC', 'Noto Sans TC';
+    --noto-serif: 'Noto Serif SC', 'Noto Serif TC', 'Noto Serif';
+    --noto-sans: 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans';
     --google-sans: 'Google Sans Flex';
 }
 
@@ -366,6 +366,7 @@ footer {
     }
 
 }
+
 
 
 
