@@ -162,7 +162,7 @@ body {
 .hero h1 {
     font-size: 64px;
     letter-spacing: 4px;
-    font-family: '京華老宋体_KingHwa_OldSong';
+    font-family: '京華老宋体';
     font-weight: normal;
 }
 
@@ -365,4 +365,5 @@ footer {
     }
 
 }
+
 
