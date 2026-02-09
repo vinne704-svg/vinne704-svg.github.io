@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang-zh>
+    <head>
+        <meta name="color-scheme" content="light dark">
+        <title>Academy - 关于你</title>
+        <link rel="stylesheet" href="\Users\heara\Academy\article.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    </head>
+    
+    <body>
+        <div class="app-container">
+            <aside class="sidebar">
+                <div class="logo">
+                    <img src="\Users\heara\Downloads\AthensSchool.png" style="background-color: inherit;" width="30px">c<a style="color:darkgoldenrod">a</a>de<a style="color:chocolate;">m</a>y</a>
+                </div>
+
+                <div class="info">
+                    <div>
+                        <h3><span class="material-symbols-outlined" style="font-size: 20px; vertical-align: var(--symsink-h3);">home</span> <a href="\Users\heara\Academy\Academy%20-%20首页.html">回首页</a></h3>
+                    </div>
+
+                    <div>
+                        <h3><span class="material-symbols-outlined" style="font-size: 20px; vertical-align: var(--symsink-h3);">format_size</span> 字体</h3>
+                        <div class="fontsizesetting">
+                            <button onclick="smallfont()" style="border-left: 6px solid black; padding-left: 8px;">小</button>
+                            <button onclick="mediumfont()">中</button>
+                            <button onclick="bigfont()">大</button>
+                            <script>
+                                let scale = localStorage.getItem("fontScale") || 1;
+                                applyFontScale(scale);
+
+                                function applyFontScale(s) {
+                                    document.documentElement.style.setProperty('--font-scale', s);
+                                    localStorage.setItem("fontScale", s);
+                                }
+
+                                function bigfont() {
+                                    scale = 1.25
+                                    applyFontScale(scale)
+                                }
+
+                                function smallfont() {
+                                    scale = 0.8
+                                    applyFontScale(scale)
+                                }
+
+                                function mediumfont() {
+                                    scale = 1
+                                    applyFontScale(scale)
+                                }
+                            </script>
+                        </div>
+
+                        <div class="fontfamilysetting">
+                            <button style="font-family: 'Noto Serif SC', 'Noto Serif TC';">Noto Serif 中文</button>
+                            <button style="font-family: 微软雅黑;">微软雅黑</button>
+                            <button style="font-family: 'Google Sans Flex';">Google Sans</button>
+                        </div>
+                    </div>
+
+                    <div class="direct">
+                            <h3><span class="material-symbols-outlined"  style="font-size: 20px; vertical-align: var(--symsink-h3);">list</span> 目录导航</h3>
+                            <p><a href="#账号">账号</a></p>
+                            <p><a href="#投稿">投稿</a></p>
+                            <p><a href="#反馈">反馈</a></p>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <div class="article">
+                    <h1 id="关于你">关于你</h1>
+                        <p>下面我们将为我们的访客解答账号、投稿和反馈三个方面的问题。撒顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶十大的撒盛大大撒大撒撒打发十分感动点五十分</p>
+                        <p>的撒大的撒大第三方大多数多少钱啊搭讪 · 1 大撒大撒撒 Google Sans Code 啊</p>
+
+                    <h2 id="账号">账号</h2>
+                    <p>
+                        
+                    </p>
+                    <p>
+                        
+                    </p>
+                    
+                    <h2 id="投稿">投稿</h2>
+                    <p>
+                        大苏打
+                    </p>
+
+                    <h2 id="反馈">反馈</h2>
+                    <p>
+
+                    </p>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
