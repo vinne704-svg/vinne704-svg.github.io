@@ -24,7 +24,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-variant-east-asian: proportional-width;
 }
 
 .logo {
@@ -307,6 +306,7 @@ body {
     margin-top: calc(10.625px * var(--font-scale));
     font-size: calc(21.25px * var(--font-scale));
     font-weight: var(--font-weight-h3);
+}
 
 .article p {
     margin-top: calc(10px * var(--font-scale));
@@ -360,6 +360,7 @@ body {
     }
 
 }
+
 
 
 
