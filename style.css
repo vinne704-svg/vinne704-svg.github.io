@@ -8,6 +8,11 @@
     --noto-serif: 'Noto Serif SC', 'Noto Serif TC', 'Noto Serif';
     --noto-sans: 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans';
     --google-sans: 'Google Sans', 'Google Sans Flex', 'Noto Sans SC', 'Noto Sans TC';
+    --font-family: var(--sym-default);
+    --font-weight-h1: 400;
+    --font-weight-h2: 400;
+    --font-weight-h3: 400;
+    --font-weight-p: 400;
 }
 
 @font-face {
@@ -271,14 +276,6 @@ body {
     font-weight: 400;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    margin-top: 40px;
-    letter-spacing: 0.5px;
-    color: #777;
-}
-
 @media (max-width: 1000px) {
     .container {
         grid-template-columns: 1fr;
@@ -290,26 +287,31 @@ footer {
     padding-left: 10%;
     padding-right: 40%;
     background-color: rgb(250, 250, 250);
-    font-family: var(--noto-serif);
     overflow-y: auto;
+    font-family: var(--font-family);
 }
 
 .article h1 {
     margin-top: calc(20px * var(--font-scale));
     font-size: calc(40px * var(--font-scale));
-    font-weight: 600;
+    font-weight: var(--font-weight-h1);
 }
 
 .article h2 {
     margin-top: calc(15px * var(--font-scale));
     font-size: calc(30px * var(--font-scale));
-    font-weight: 500;
+    font-weight: var(--font-weight-h2);
 }
+
+.article h3 {
+    margin-top: calc(10.625px * var(--font-scale));
+    font-size: calc(21.25px * var(--font-scale));
+    font-weight: var(--font-weight-h3);
 
 .article p {
     margin-top: calc(10px * var(--font-scale));
     font-size: calc(20px * var(--font-scale));
-    font-weight: 400;
+    font-weight: var(--font-weight-p);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -358,6 +360,7 @@ footer {
     }
 
 }
+
 
 
 
