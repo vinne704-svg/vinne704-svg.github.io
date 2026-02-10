@@ -26,16 +26,17 @@
                     <div>
                         <h3><span class="material-symbols-outlined" style="font-size: 20px; vertical-align-3px;">format_size</span> 字体</h3>
                         <div class="fontsizesetting">
-                            <button onclick="setSize(0.8)" style="border-left: 6px solid black; padding-left: 8px;">小</button>
-                            <button onclick="setSize(1)">中</button>
-                            <button onclick="setSize(1.25)">大</button>
+                            <button onclick="setSize(1)" style="border-left: 6px solid black; padding-left: 8px;">小</button>
+                            <button onclick="setSize(1.2)">中</button>
+                            <button onclick="setSize(1.44)">大</button>
                             <script>
                                 function setSize(s) {
                                     document.documentElement.style.setProperty('--font-scale', s);
                                     localStorage.setItem("fontScale", s);
                                 }
                                 
-                                setSize(localStorage.getItem("fontScale") || 1);
+                                const savedSize = JSON.parse(localStorage.getItem("fontSize"));
+                                setSize(savedSize ? savedSize : noto_serif);
                             </script>
                         </div>
 
@@ -59,8 +60,9 @@
                                     document.documentElement.style.setProperty('--font-weight-p', wh);
                                     localStorage.setItem("fontStyle", JSON.stringify([f, wp1, wp2, wp3, wh]));
                                 }
-
-                                setStyle(localStorage.getItem("fontStyle") || noto_serif);
+                                
+                                const savedStyle = JSON.parse(localStorage.getItem("fontStyle"));
+                                setStyle(savedStyle ? savedStyle : noto_serif);
                             </script>
                         </div>
                         
@@ -104,4 +106,5 @@
     </body>
 
 </html>
+
 
