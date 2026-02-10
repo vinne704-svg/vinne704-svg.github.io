@@ -14,7 +14,7 @@
 
     <body>
         <div id="layout" class="layout">
-            <aside class="sidebar">
+            <aside id="sidebar" class="sidebar">
                 <div class="logo">
                     <img src="LOGO.png" style="background-color: inherit;" width="30px">c<a style="color: darkgoldenrod">a</a>de<a style="color: chocolate;">m</a>y</a>
                 </div>
@@ -24,15 +24,12 @@
                     <script>
                         function toggleSidebar() {
                             const sidebar = document.getElementById('sidebar');
-                            // 自动切换：如果有 collapsed 就删掉，如果没有就加上
                             sidebar.classList.toggle('collapsed');
                             
-                            // 顺便把状态存进 localStorage，刷新页面也能记住开合状态
                             const isCollapsed = sidebar.classList.contains('collapsed');
                             localStorage.setItem("sidebarStatus", isCollapsed ? "hidden" : "show");
                         }
                         
-                        // 页面初始化加载状态
                         const savedStatus = localStorage.getItem("sidebarStatus");
                         if (savedStatus === "hidden") {
                             document.getElementById('sidebar').classList.add('collapsed');
@@ -106,6 +103,7 @@
         </div>
     </body>
 </html>
+
 
 
 
