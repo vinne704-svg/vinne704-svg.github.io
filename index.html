@@ -21,21 +21,23 @@
 
                 <div id="sidebar" class="sidebar">
                     <button onclick="toggleSidebar()"><span class="material-symbols-outlined">menu</span></button>
-                    function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    // 自动切换：如果有 collapsed 就删掉，如果没有就加上
-    sidebar.classList.toggle('collapsed');
-    
-    // 顺便把状态存进 localStorage，刷新页面也能记住开合状态
-    const isCollapsed = sidebar.classList.contains('collapsed');
-    localStorage.setItem("sidebarStatus", isCollapsed ? "hidden" : "show");
-}
-
-// 页面初始化加载状态
-const savedStatus = localStorage.getItem("sidebarStatus");
-if (savedStatus === "hidden") {
-    document.getElementById('sidebar').classList.add('collapsed');
-}
+                    <script>
+                        function toggleSidebar() {
+                            const sidebar = document.getElementById('sidebar');
+                            // 自动切换：如果有 collapsed 就删掉，如果没有就加上
+                            sidebar.classList.toggle('collapsed');
+                            
+                            // 顺便把状态存进 localStorage，刷新页面也能记住开合状态
+                            const isCollapsed = sidebar.classList.contains('collapsed');
+                            localStorage.setItem("sidebarStatus", isCollapsed ? "hidden" : "show");
+                        }
+                        
+                        // 页面初始化加载状态
+                        const savedStatus = localStorage.getItem("sidebarStatus");
+                        if (savedStatus === "hidden") {
+                            document.getElementById('sidebar').classList.add('collapsed');
+                        }
+                    </script>
                 </div>
                 
                 <div class="info">
@@ -104,6 +106,7 @@ if (savedStatus === "hidden") {
         </div>
     </body>
 </html>
+
 
 
 
