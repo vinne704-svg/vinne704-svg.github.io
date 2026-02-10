@@ -33,13 +33,13 @@ body {
     overflow: hidden;
 }
 
-h3.material-symbols-outlined {
+h3 .material-symbols-outlined {
     font-size: inherit;
     vertical-align: -1.53px;
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
 }
 
-p.material-symbols-outlined {
+p .material-symbols-outlined {
     font-size: inherit;
     vertical-align: -1.47px;
     font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
@@ -390,6 +390,7 @@ a.new {
     }
 
 }
+
 
 
 
