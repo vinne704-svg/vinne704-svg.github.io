@@ -26,17 +26,17 @@
                     <div>
                         <h3><span class="material-symbols-outlined" style="font-size: 20px; vertical-align-3px;">format_size</span> 字体</h3>
                         <div class="fontsizesetting">
-                            <button onclick="setSize(1)" style="border-left: 6px solid black; padding-left: 8px;">小</button>
-                            <button onclick="setSize(1.2)">中</button>
-                            <button onclick="setSize(1.44)">大</button>
+                            <button onclick="setScale(1)" style="border-left: 6px solid black; padding-left: 8px;">小</button>
+                            <button onclick="setScale(1.2)">中</button>
+                            <button onclick="setScale(1.44)">大</button>
                             <script>
-                                function setSize(s) {
+                                function setScale(s) {
                                     document.documentElement.style.setProperty('--font-scale', s);
                                     localStorage.setItem("fontScale", s);
                                 }
                                 
-                                const savedSize = JSON.parse(localStorage.getItem("fontSize"));
-                                setSize(savedSize ? savedSize : noto_serif);
+                                const savedScale = localStorage.getItem("fontScale");
+                                setScale(savedScale ? savedScale : 1.2);
                             </script>
                         </div>
 
@@ -106,5 +106,6 @@
     </body>
 
 </html>
+
 
 
