@@ -1,4 +1,5 @@
 :root {
+    --sidebar-width: 250px;
     --font-scale: 1.2;
     --bg-light: rgb(250,250,250);
     --bg-lighter: white;
@@ -32,13 +33,13 @@ body {
     overflow: hidden;
 }
 
-h3 .material-symbols-outlined {
+h3.material-symbols-outlined {
     font-size: inherit;
     vertical-align: -1.53px;
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
 }
 
-p .material-symbols-outlined {
+p.material-symbols-outlined {
     font-size: inherit;
     vertical-align: -1.47px;
     font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
@@ -61,18 +62,6 @@ a.new {
     color: #ba0000;
 }
 
-a[href^="http"]::after {
-    content: "";
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-left: 4px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'%3E%3Cpath d='M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'/%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-}
-
 .logo {
     max-width: 80%;
     font-size: 25px;
@@ -80,16 +69,23 @@ a[href^="http"]::after {
     font-family: 'EB Garamond';
 }
 
-.app-container {
+.layout {
     display: flex;
-    height: 100vh;
+    transition: all 0.3s ease;
 }
 
 .sidebar {
-    width: 15%;
-    padding: 15px;
+    width: var(--sidebar-width);
+    height: 100vh;
+    padding: 10px;
+    overflow: hidden;
     overflow-y: auto;
     background-color: var(--bg-lighter);
+}
+
+.sidebar.collapsed {
+    --sidebar-width: 0px;
+    border-right: none;
 }
 
 .info {
@@ -191,6 +187,7 @@ a[href^="http"]::after {
 }
 
 .main-content {
+    flex-grow: 1;
     flex: 1;
     background-color: var(--bg-light);
     overflow-y: auto;
@@ -393,6 +390,7 @@ a[href^="http"]::after {
     }
 
 }
+
 
 
 
