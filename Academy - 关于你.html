@@ -30,11 +30,12 @@
                             <button onclick="setSize(1)">中</button>
                             <button onclick="setSize(1.25)">大</button>
                             <script>
-                                applyFontScale(localStorage.getItem("fontScale") || 1);
                                 function setSize(s) {
                                     document.documentElement.style.setProperty('--font-scale', s);
                                     localStorage.setItem("fontScale", s);
                                 }
+                                
+                                setSize(localStorage.getItem("fontScale") || 1);
                             </script>
                         </div>
 
@@ -86,6 +87,7 @@
     </body>
 
 </html>
+
 
 
 
