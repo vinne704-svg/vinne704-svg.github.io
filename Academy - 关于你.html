@@ -26,41 +26,26 @@
                     <div>
                         <h3><span class="material-symbols-outlined" style="font-size: 20px; vertical-align-3px;">format_size</span> 字体</h3>
                         <div class="fontsizesetting">
-                            <button onclick="smallfont()" style="border-left: 6px solid black; padding-left: 8px;">小</button>
-                            <button onclick="mediumfont()">中</button>
-                            <button onclick="bigfont()">大</button>
+                            <button onclick="setSize(0.8)" style="border-left: 6px solid black; padding-left: 8px;">小</button>
+                            <button onclick="setSize(1)">中</button>
+                            <button onclick="setSize(1.25)">大</button>
                             <script>
-                                let scale = localStorage.getItem("fontScale") || 1;
-                                applyFontScale(scale);
-
-                                function applyFontScale(s) {
+                                function setSize(s) {
                                     document.documentElement.style.setProperty('--font-scale', s);
                                     localStorage.setItem("fontScale", s);
-                                }
-
-                                function bigfont() {
-                                    scale = 1.25
-                                    applyFontScale(scale)
-                                }
-
-                                function smallfont() {
-                                    scale = 0.8
-                                    applyFontScale(scale)
-                                }
-
-                                function mediumfont() {
-                                    scale = 1
-                                    applyFontScale(scale)
                                 }
                             </script>
                         </div>
 
                         <div class="fontfamilysetting">
-                            <button style="font-family: var(--sym-default);">系统默认<button>
+                            <button onclick=""; style="font-family: var(--sym-default);">系统默认</button>
                             <button style="font-family: var(--google-sans);">Google Sans</button>
                             <button style="font-family: var(--noto-sans);">思源黑体</button>
                             <button style="font-family: var(--noto-serif);">思源宋体</button>
                         </div>
+                        <script>
+                            
+                        </script>
                     </div>
 
                     <div class="direct">
@@ -100,5 +85,6 @@
     </body>
 
 </html>
+
 
 
