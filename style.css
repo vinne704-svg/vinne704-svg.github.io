@@ -84,19 +84,18 @@ a.new {
 }
 
 .sidebar.collapsed {
-    --sidebar-width: 100px;
+    --sidebar-width: 200px;
 }
 
 .info {
     max-width: 300px;
-    margin: 20px;
+    margin: 30px;
     padding-top: 50px;
     font-family: var(--noto-serif);
 }
 
 .info h3 {
-    margin-top: 10px;
-    line-height: 50px;
+    margin: 25px;
     letter-spacing: 2px;
     font-size: 18px;
     font-weight: 500;
@@ -108,7 +107,7 @@ a.new {
 }
 
 .info p {
-    margin-bottom: 10px;
+    margin: 15px;
     letter-spacing: 2px;
     font-weight: 400;
     color: #555;
@@ -389,6 +388,7 @@ a.new {
     }
 
 }
+
 
 
 
