@@ -84,8 +84,7 @@ a.new {
 }
 
 .sidebar.collapsed {
-    --sidebar-width: 0px;
-    border-right: none;
+    --sidebar-width: 30px;
 }
 
 .info {
@@ -390,6 +389,7 @@ a.new {
     }
 
 }
+
 
 
 
