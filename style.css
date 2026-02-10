@@ -4,10 +4,10 @@
     --bg-lighter: white;
     --bg-dark: #333;
     --bg-darker: #222;
-    --sym-default: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "STHeiti", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --noto-serif: 'Noto Serif SC', 'Noto Serif TC', 'Noto Serif';
-    --noto-sans: 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans';
-    --google-sans: 'Google Sans', 'Google Sans Flex', 'Noto Sans SC', 'Noto Sans TC';
+    --sym-default: system-ui, sans-serif;
+    --noto-serif: 'Noto Serif SC', 'Noto Serif TC', 'Noto Serif',  Roboto, Arial, sans-serif;
+    --noto-sans: 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans',  Roboto, Arial, sans-serif;
+    --google-sans: "Google Sans Flex", "Google Sans", Roboto, Arial, sans-serif;
     --font-family: var(--sym-default);
     --font-weight-h1: 400;
     --font-weight-h2: 400;
@@ -360,6 +360,7 @@ body {
     }
 
 }
+
 
 
 
