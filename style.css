@@ -15,14 +15,11 @@
     src: url("京華老宋体v2.002.woff2") format("truetype");
 }
 
-.material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-variant-east-asian: proportional-width;
 }
 
 .logo {
@@ -30,6 +27,17 @@
     font-size: 25px;
     white-space: nowrap;
     font-family: 'EB Garamond';
+}
+
+h3 .material-symbols-outlined {
+    font-size: inherit;
+    vertical-align: 
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+
+p .material-symbols-outlined {
+    font-size: inherit;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
 }
 
 body {
@@ -85,7 +93,6 @@ body {
     text-decoration: none;
     color: inherit;
 }
-
 
 .fontsizesetting {
     padding-left: 15px;
@@ -350,6 +357,7 @@ footer {
     }
 
 }
+
 
 
 
