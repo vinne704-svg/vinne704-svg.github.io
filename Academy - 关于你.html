@@ -40,17 +40,42 @@
                         </div>
 
                         <div class="fontfamilysetting">
-                            <button onclick=""; style="font-family: var(--sym-default);">系统默认</button>
-                            <button style="font-family: var(--google-sans);">Google Sans</button>
-                            <button style="font-family: var(--noto-sans);">思源黑体</button>
-                            <button style="font-family: var(--noto-serif);">思源宋体</button>
+                    <button onclick="setStyle(sym_default)" style="font-family: var(--sym-default);">系统默认</button>
+                    <button onclick="setStyle(google_sans)" style="font-family: var(--google-sans);">Google Sans</button>
+                    <button onclick="setStyle(noto_sans)" style="font-family: var(--noto-sans);">思源黑体</button>
+                    <button onclick="setStyle(noto_serif)" style="font-family: var(--noto-serif);">思源宋体</button>
+
+                    <script>
+    // 1. 定义序组（注意：字体名要加引号变成字符串，逗号用英文）
+    const sym_default = ['var(--sym-default)', 600, 500, 400, 400];
+    const google_sans = ['var(--google-sans)', 400, 400, 400, 400];
+    const noto_sans   = ['var(--noto-sans)', 600, 500, 400, 400];
+    const noto_serif  = ['var(--noto-serif)', 600, 500, 400, 400];
+
+    // 2. 核心函数
+    function setStyle([f, wp1, wp2, wp3, wh]) {
+        const root = document.documentElement.style;
+        root.setProperty('--font-family', f);
+        root.setProperty('--font-weight-h1', wp1);
+        root.setProperty('--font-weight-h2', wp2);
+        root.setProperty('--font-weight-h3', wp3);
+        root.setProperty('--font-weight-p', wh);
+        
+        // 关键：以 JSON 格式存储序组，才能保持数组结构
+        localStorage.setItem("fontStyle", JSON.stringify([f, wp1, wp2, wp3, wh]));
+    }
+
+    // 3. 初始化读取
+    try {
+        const saved = localStorage.getItem("fontStyle");
+        // 如果有缓存就解析，没有就默认用 noto_serif
+        setStyle(saved ? JSON.parse(saved) : noto_serif);
+    } catch (e) {
+        setStyle(noto_serif);
+    }
+</script>
                         </div>
-                        <script>
-                            let sym_default = [var(--sym-default), 600, 500, 400, 400],
-                                google_sans = [var(--google-sans), 400, 400, 400, 400],
-                                noto_sans   = [var(--noto-sans), ],
-                            
-                        </script>
+                        
                     </div>
 
                     <div class="direct">
@@ -90,6 +115,7 @@
     </body>
 
 </html>
+
 
 
 
